@@ -38,15 +38,14 @@ res\Anti_Sleep.rc2
 	Visual C++.  You should place all resources not editable by
 	the resource editor in this file.
 
-
-
-========================================================================
+==========
 Name:      Anti-ScrSaver/Anti_Sleep
 Function：     阻止计算机屏幕保护开启，计算机休眠,为无计算机管理员权限的用户提供
 Env:  Windows XP/Vista/7
-========================================================================
-版本更新
 
+
+ChangeLog版本更新
+==========
    v1.0         完成基本功能，UI;
    v1.1         利用时钟出发，实现在非激活状态下运行
    v1.2         修复按回车程序即退出的Bug
