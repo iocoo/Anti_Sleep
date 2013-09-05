@@ -1,4 +1,4 @@
-Anti_Sleep[阻止计算机休眠]
+Anti-PC-Sleep[阻止计算机休眠]
 ==========
 
 Keep your PC awake for those who have no administrator password in Enterprise domain Network.
@@ -44,7 +44,6 @@ res\Anti_Sleep.rc2
 Name:      Anti-ScrSaver/Anti_Sleep
 Function：     阻止计算机屏幕保护开启，计算机休眠,为无计算机管理员权限的用户提供
 Env:  Windows XP/Vista/7
-Autor:  gigi
 ========================================================================
 版本更新
 
