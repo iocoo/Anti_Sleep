@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Anti_Sleep - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\WZ1204~1\LOCALS~1\Temp\RSP84.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Anti_Sleep.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Project\Anti_Sleep\Anti_SleepDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\WZ1204~1\LOCALS~1\Temp\RSP84.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/Anti_Sleep.pdb" /machine:I386 /out:"Release/Anti_Sleep.exe"  .\Release\Anti_Sleep.obj .\Release\Anti_SleepDlg.obj .\Release\ShutdownDlg.obj .\Release\StdAfx.obj .\Release\Anti_Sleep.res "
+<h3>Output Window</h3>
+Compiling...
+Anti_SleepDlg.cpp
+E:\Project\Anti_Sleep\Anti_SleepDlg.cpp(4) : warning C4652: compiler option 'Generate Browser Info' inconsistent with precompiled header; current command-line option will override that defined in the precompiled header
+Linking...
+
+
+
+<h3>Results</h3>
+Anti_Sleep.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

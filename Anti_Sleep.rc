@@ -1,0 +1,248 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Anti_Sleep.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Anti_Sleep.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 199, 61
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "Anti-ScrSaver 1.5 正式版",IDC_STATIC,37,16,102,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2011 By Wangzhe",IDC_STATIC,10,44,119,8
+    DEFPUSHBUTTON   "确定",IDOK,145,40,47,14,WS_GROUP
+    LTEXT           "为无计算机管理员权限的用户提供...",IDC_STATIC,35,29,135,
+                    10
+END
+
+IDD_ANTI_SLEEP_DIALOG DIALOGEX 0, 0, 212, 72
+STYLE WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "退出(&Q)",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    146,51,50,14
+    LTEXT           "正在进入工作状态...",IDC_TIMESTATIC,63,19,84,11,
+                    SS_SUNKEN,WS_EX_STATICEDGE
+    LTEXT           "程序运行中，选择隐藏/最小化仍可运行..",IDC_WORKSTATIC,
+                    22,35,169,14
+    CONTROL         "定时关机",ID_TIMESHUTDOWN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,40,51,50,14
+    CONTROL         "隐藏(&H)",ID_TOTRAY,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    93,51,50,14
+END
+
+IDD_SHUTDOWNDIALOG DIALOGEX 0, 0, 212, 72
+STYLE WS_POPUP
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,92,50,44,13
+    PUSHBUTTON      "取消",IDCANCEL,143,50,41,13
+    CONTROL         "DateTimePicker3",IDC_TIMEPICKER,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,18,33,65,
+                    16
+    LTEXT           "设定关机时间，系统将自动关闭:",IDC_STATIC,13,17,134,8
+    LTEXT           "",IDC_STATICTIME,95,35,88,8,NOT WS_VISIBLE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,5,0,1
+ PRODUCTVERSION 1,5,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "G.E.J.O\0"
+            VALUE "FileDescription", "阻止屏保开启应用程序\0"
+            VALUE "FileVersion", "1, 5, 0, 1\0"
+            VALUE "InternalName", "Anti_Sleep\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2011 By Wangzhe\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Anti_ScrSaver.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Anti_Saver应用\0"
+            VALUE "ProductVersion", "1, 5, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_ANTI_SLEEP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_SHUTDOWNDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\back.bmp"
+IDB_SHUTDOWNBMP         BITMAP  DISCARDABLE     "res\\shutdown.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\HIDE.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\quit.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "隐藏到托盘"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Anti_Sleep.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
